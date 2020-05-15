@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-<h1>My First Heading</h1>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sondage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    </head>
 
-<p>My first paragraph.</p>
+    <body>
+        <!-- Header Content-->
+        <section class="aw-header">
+            <div class="aw-header-text ">
+                <h1 class="aw-pulsate">Welcome!</h1>
+            </div>
+            <img class="aw-main-banner" src="./img/banner.jpg">
+        </section>
 
-</body>
+        <!-- Evalutate UI -->
+        <section class="section-ui">
+            <h3>UI to evalute</h3>
+            <img class="img-ui" src="./img/ui-evalute.PNG">
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h3>What do you like</h3>
+            <form action="" method="">
+                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="surname" placeholder="Surname" />
+
+                <h3>Did you ever user Bootstrap 4 ?</h3>
+                <div class="section-radio">
+                    <input type="radio" class="radio" name="YesorNo" value="Yes" id="Yes" />
+                    <label for="Yes">Yes</label>
+                    <input type="radio" class="radio" name="YesorNo" value="No" id="No" />
+                    <label for="No">No</label>
+                </div>
+                <h3>What colors do you prefer ?</h3>
+                <div class="section-radio">
+                    <input type="checkbox" class="checkbox" name="color1" value="Black" id="color1" />
+                    <label for="color1">Black</label>
+                    <input type="checkbox" class="checkbox" name="color2" value="White" id="color2" />
+                    <label for="color2">White</label>
+                    <input type="checkbox" class="checkbox" name="color3" value="Purple" id="color3" />
+                    <label for="color3">Purple</label>
+                    <input type="checkbox" class="checkbox" name="color4" value="Pink" id="color4" />
+                    <label for="color4">Pink</label>
+                </div>
+
+                <h3>What is your favorite css library ?</h3>
+                <select class="select-list">
+                    <option value="bootstrap">Bootstrap</option>
+                    <option value="materialize">Materialize</option>
+                    <option value="purecss">Pure Css</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <h3>Give a note on this UI presented ?</h3>
+                <div class="section-radio">
+                    <input type="radio" class="radio" name="note" value="1" id="note1" />
+                    <label for="note1">1</label>
+                    <input type="radio" class="radio" name="note" value="2" id="note2" />
+                    <label for="note2">2</label>
+                    <input type="radio" class="radio" name="note" value="3" id="note3" />
+                    <label for="note3">3</label>
+                    <input type="radio" class="radio" name="note" value="4" id="note4" />
+                    <label for="note4">4</label>
+                    <input type="radio" class="radio" name="note" value="5" id="note5" />
+                    <label for="note5">5</label>
+                </div>
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    </body>
 </html>
