@@ -160,7 +160,7 @@ function showItemCart() {
 	if (ele.length > 0) {
 		// add paragraph and total price
 		c.appendChild(para);
-		c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts) + " $"));
+		c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts).toFixed(2) + " $"));
 	} else {
 		var bold = document.createElement('strong'),
 		textnode = document.createTextNode("There is no item in your cart \n");
