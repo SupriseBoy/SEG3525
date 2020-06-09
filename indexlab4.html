@@ -1,0 +1,225 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- The head should contain an appropriate title for your site -->
+    <head>
+        <title>Module 4 - Labo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+        <!-- Your own additional style sheet -->
+        <link href="css/styleLab4.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+        <!-- Should show the name of your company with an image or logo -->
+        <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+        <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+        <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+        <div class="container-md p-3 my-3 border text-white div-Center welcome-container div-text-align">
+           <h1>Signature Cuts and Styles Salon</h1>
+           <p>We'll take care of your hair!</p>
+        </div>
+        <div class="container-md p-3 my-3 border div-container">
+           <div class="row">
+              <div class="col-md-7 order-md-2">
+                 <h2>We need each <span class="text-muted">other</span></h2>
+                 <p class="lead" style="text-align: justify;">A cut above the rest and the signature styles you demand. Helping you look your best is why we are here and why you should entrust us with your hair and the style you want.
+                 </p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                 <!-- Image free use on https://unsplash.com/photos/PtOfbGkU3uI -->
+                 <img class="featurette-image img-fluid mx-auto" src="./images/main-banner.jpg" alt="Generic placeholder image">
+              </div>
+           </div>
+           <hr>
+        </div>
+        <!-- Free image https://www.freepik.com/free-vector/hairdresser-human-characters-set_5972207.htm#page=1&query=hairdresser%20beauty%20salon&position=11 -->
+        <div class="container-md p-3 my-3 border div-container div-text-align">
+           <!-- Three columns of text below the carousel -->
+           <h2>Your Style Crew</h2>
+           <hr>
+           <div class="row">
+              <div class="col-lg-4 div-Center">
+                 <img class="rounded-circle" src="./images/personne_1.PNG" alt="Generic placeholder image" width="140" height="140">
+                 <h2>Charles</h2>
+                 <p style="text-align: justify;">Charles is not only great at giving your hair the style you want but he is also a movie buff you can test your cinematic knowledge with.</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-4 div-Center">
+                 <img class="rounded-circle" src="./images/personne_2.PNG" alt="Generic placeholder image" width="140" height="140">
+                 <h2>Julie</h2>
+                 <p style="text-align: justify;">Julie is fresh off the boat and our newest addition to the Style Crew. Known as a master of precision cuts for Men and Women Julie is a former hairdresser of the year from Dublin.</p>
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-lg-4 div-Center">
+                 <img class="rounded-circle" src="./images/personne_3.PNG" alt="Generic placeholder image" width="140" height="140">
+                 <h2>Rachel</h2>
+                 <p style="text-align: justify;">Rachel is our hair styling savant. With us for her whole 10 year career she is only satisfied when you are.</p>
+              </div>
+              <!-- /.col-lg-4 -->
+           </div>
+           <!-- /.row -->
+        </div>
+        <div class="container-md p-3 my-3 border div-container">
+           <div class="container div-text-align">
+              <h2>Our prices</h2>
+              <hr>
+              <div class="card-deck mb-3 text-center">
+                 <div class="card mb-4 box-shadow">
+                    <div class="card-header title-container">
+                       <h4 class="my-0 font-weight-normal">Freshen up</h4>
+                    </div>
+                    <div class="card-body">
+                       <h2 class="card-title pricing-card-title">$15</small></h2>
+                       <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Includes</b></li>
+                            <li>Trim and clean up</li>
+                       </ul>
+                       <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button> -->
+                    </div>
+                 </div>
+                 <div class="card mb-4 box-shadow">
+                    <div class="card-header title-container">
+                       <h4 class="my-0 font-weight-normal">Rejuvenation</h4>
+                    </div>
+                    <div class="card-body">
+                       <h2 class="card-title pricing-card-title">$25</small></h2>
+                       <ul class="list-unstyled mt-3 mb-4">
+                           <li><b>Includes</b></li>
+                           <li>Wash and Cut</li>
+                           <li>Style and set</li>
+                       </ul>
+                       <!-- <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button> -->
+                    </div>
+                 </div>
+                 <div class="card mb-4 box-shadow">
+                    <div class="card-header title-container">
+                       <h4 class="my-0 font-weight-normal">A New Me</h4>
+                    </div>
+                    <div class="card-body">
+                       <h2 class="card-title pricing-card-title">$35</small></h2>
+                       <ul class="list-unstyled mt-3 mb-4">
+                        <li><b>Includes</b></li>
+                          <li>The works including</li>
+                          <li>highlights and extentsions</li>
+                       </ul>
+                       <!-- <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button> -->
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <hr>
+           <!-- Collapsible with multiple items - accordion -->
+           <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+           <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+           <!-- could work well.  You can use other patterns too.  This is just an example. -->
+           <div class="container">
+              <div class="container-md p-3 my-3 border text-white div-Center welcome-container">
+                 <h1>Appointment</h1>
+              </div>
+              <div id="accordion">
+                 <div class="card">
+                    <div class="card-header">
+                       <a class="card-link" data-toggle="collapse" href="#collapseService">
+                          <h4>Choose a service</h4>
+                       </a>
+                    </div>
+                    <div id="collapseService" class="collapse show" data-parent="#accordion">
+                       <div class="card-body">
+                          <p>Here is our list of services</p>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value=""> Freshen up</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value=""> Rejuvenation</label>
+                          </div>
+                          <div class="checkbox disabled">
+                            <label><input type="checkbox" value=""> A New Me</label>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">
+                             <h4>Choose a date</h4>
+                          </a>
+                       </div>
+                       <div id="collapseDate" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                             <p>What date?</p>
+                             <!-- Bootstrap has various input components. Some examples are given here: -->
+                             <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                             <div class="form-group row">
+                                <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                                <div class="col-10">
+                                   <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">
+                             <h4>Your info</h4>
+                          </a>
+                       </div>
+                       <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                             <p>Your information so we can contact you</p>
+                             <form>
+                                <div class="form-group">
+                                  <label for="formGroupExampleInput">Name</label>
+                                  <input type="text" class="form-control" id="formGroupExampleInput1" aria-describedby="nameHelp" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupExampleInput2">Email</label>
+                                  <input type="email" class="form-control" id="formGroupExampleInput2" aria-describedby="emailHelp" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">Phone</label>
+                                    <input type="tel" class="form-control" id="formGroupExampleInput3" name="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                  </div>
+                              </form>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <hr>
+                 <div class="row">
+                    <div class="col-md-7 order-md-2 div-text-align div-information">
+                        <p class="lead"><b>Address:</b> 4259 De la Providence Avenue</p>
+                        <p class="lead"><b>City:</b> Gatineau</p>
+                        <p class="lead"><b>Zip Code:</b> J8P 8A5</p>
+                        <p class="lead"><b>Phone Number:</b> 819-439-9654</p>
+                     </div>
+                    <div class="col-md-5 order-md-1">
+                       <!-- Image free use on googlemap -->
+                       <img class="featurette-image img-fluid mx-auto" src="./images/map.PNG" alt="Generic placeholder image">
+
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </body>
+    <footer>
+        <!-- <div class="footer"> -->
+          <h5 id="footer-email">jleac092@uottawa.ca<h5>
+        <!-- </div> -->
+    </footer>
+</html>
